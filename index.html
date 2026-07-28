@@ -11,6 +11,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Enable smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 <body>
 
@@ -524,7 +530,7 @@
         <a href="#" class="btn-ghost-dark">Download Resume</a>
       </div>
       
-                <div class="hire-social-row mt-4">
+          <div class="hire-social-row mt-4">
             <span class="hire-social-label">Social</span>
             <a href="#" class="social-square-sm" aria-label="LinkedIn">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg>
@@ -542,15 +548,7 @@
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
             </a>
           </div>
-      
-      
-      
-      
     </div>
-    
-    
-    
-    
   </section>
 
   <!-- ============ FOOTER ============ -->
@@ -601,12 +599,14 @@
     });
   });
 
-  // Collapse mobile navbar automatically after a link is tapped
+  // Updated: Smoothly collapse mobile navbar after link click with a micro-delay
   document.querySelectorAll('.main-navbar .nav-link-item, .nav-cta a').forEach(link => {
     link.addEventListener('click', () => {
       const collapseEl = document.getElementById('mainNavCollapse');
       if(collapseEl && collapseEl.classList.contains('show')){
-        bootstrap.Collapse.getOrCreateInstance(collapseEl).hide();
+        setTimeout(() => {
+          bootstrap.Collapse.getOrCreateInstance(collapseEl).hide();
+        }, 150);
       }
     });
   });
@@ -633,7 +633,7 @@
     });
   });
 
-  // Scroll-to-top button: fade/slide in after scrolling, animated smooth scroll on click
+  // Scroll-to-top button
   const scrollTopBtn = document.getElementById('scrollTopBtn');
   window.addEventListener('scroll', () => {
     scrollTopBtn.classList.toggle('show', window.scrollY > 500);
