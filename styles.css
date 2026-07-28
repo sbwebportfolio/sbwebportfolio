@@ -243,7 +243,12 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--blue);outline-offs
 }
 
 /* ===== hire-me social row ===== */
-.hire-social-row{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap;}
+.hire-social-row{
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  flex-wrap:wrap;
+}
 .hire-social-label{color:#aab1c2;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-right:.25rem;}
 .social-square-sm{
   width:34px;height:34px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;
