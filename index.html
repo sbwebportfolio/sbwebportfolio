@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shahnawaz Bagdadi — Senior Full Stack Web Developer</title>
+<meta name="description" content="Shahnawaz Bagdadi — Senior Full Stack Web Developer, WordPress Expert, PHP Developer & AI-Powered Web Solutions Architect. 15+ years of international experience.">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ============ RESPONSIVE NAVBAR ============ -->
+  <header class="py-3">
+    <nav class="navbar navbar-expand-lg main-navbar">
+      <div class="container-fluid px-1">
+        <a href="#home" class="brand navbar-brand m-0">
+          <span class="brand-mark">S</span> Shahnawaz
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavCollapse">
+          <ul class="navbar-nav ms-lg-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link nav-link-item active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-item" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-item" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-item" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-item" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-item" href="#contact">Contact</a></li>
+            <li class="nav-item nav-cta">
+              <a href="#contact" class="btn-primary-blue">Hire Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero-card mb-5">
+    <div class="stars-layer" id="starField"></div>
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-5">
+        <div class="hero-photo-col">
+          <div class="hero-photo-frame">
+            <img src="images/profile.png" alt="Portrait of Shahnawaz Bagdadi">
+            <div class="hero-glow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="hero-text-col">
+          <h1 class="hero-name">Shahnawaz Bagdadi</h1>
+          <p class="hero-role">
+            Senior Full Stack Web Developer<br>
+            WordPress Expert &amp; PHP Developer<br>
+            <span class="accent">AI-Powered Web Solutions Architect</span>
+          </p>
+          <p class="hero-desc">
+            15+ years of international experience across India and global markets,
+           ing scalable WordPress platforms, custom PHP applications, and
+            enterprise CMS solutions with modern, AI-assisted development.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn-primary-blue">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+              Hire Me
+            </a>
+            <a href="#services" class="btn-ghost-dark">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              View Portfolio
+            </a>
+            <a href="#contact" class="btn-ghost-dark">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hire-social-row mt-4">
+            <span class="hire-social-label">Socail</span>
+            <a href="#" class="social-square-sm" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.68 0-1.25.44-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.13 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.63.24 2.83.12 3.13.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.66.42.36.78 1.08.78 2.18v3.23c0 .32.2.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Twitter / X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.9L4.8 22H1.6l8.1-9.3L1 2h7l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43C22 8.95 22 9.3 22 12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47C15.05 22 14.7 22 12 22s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.95 0 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Website">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="mb-5 py-4">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <p class="eyebrow-label mb-2">ABOUT ME</p>
+        <h2 class="about-heading-light mb-1">Welcome, I'm</h2>
+        <h2 class="about-heading-strong mb-4">Shahnawaz Bagdadi</h2>
+        <p class="about-copy mb-4">
+          I am Shahnawaz Bagdadi, a Senior Full Stack Web Developer with over 15 years
+          of experience delivering enterprise-grade CMS platforms, scalable web
+          applications, and business-critical solutions for clients around the world.
+        </p>
+        <div class="row row-cols-2 g-0">
+          <div class="col">
+            <div class="skill-list-item">
+              <span class="skill-icon">WP</span>WordPress Development
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+              </span>Custom PHP Applications
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              </span>WooCommerce
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </span>Laravel
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>HTML5
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              </span>CSS3 &amp; Tailwind
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">JS</span>JavaScript
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/><path d="M12 6v6l3 3"/></svg>
+              </span>REST API Integration
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">AI</span>AI-Assisted Development
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>SEO
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-photo-frame">
+          <img src="images/profile.png" alt="Shahnawaz Bagdadi portrait">
+          <div class="about-cta-row">
+            <a href="#contact" class="btn-primary-blue">Hire Me</a>
+            <a href="#" class="btn-ghost-dark">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="mb-5 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <nav class="side-menu">
+          <a href="#home" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </span>Home</a>
+          <a href="#about" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </span>About</a>
+          <a href="#experience" class="item active"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>Experience</a>
+          <a href="#services" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </span>Services</a>
+          <a href="#projects" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </span>Portfolio</a>
+          <a href="#contact" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          </span>Contact</a>
+        </nav>
+      </div>
+      <div class="col-lg-9">
+        <div class="exp-card">
+          <div class="stars-layer" id="starField2"></div>
+          <p class="exp-eyebrow mb-2">MY EXPERIENCE</p>
+          <h3 class="exp-title">Senior Web Developer</h3>
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>15+ Years Commercial Experience</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              </span>300+ Completed Projects</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+              </span>International Clients</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+              </span>WordPress Expert</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>PHP Specialist</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </span>CMS Architect</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="mb-5 py-4">
+    <p class="eyebrow-label mb-2">WHAT I DO</p>
+    <h2 class="about-heading-strong mb-4">Services &amp; Expertise</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">WP</div>
+          <h3 class="service-title-sm mb-2">WordPress Development</h3>
+          <p class="service-desc-sm mb-0">Custom themes, plugins, and Full Site Editings engineered for speed and maintainability.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">PHP</div>
+          <h3 class="service-title-sm mb-2">Custom PHP Applications</h3>
+          <p class="service-desc-sm mb-0">Bespoke backend systems and Laravel applications built around real business logic.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">WC</div>
+          <h3 class="service-title-sm mb-2">WooCommerce</h3>
+          <p class="service-desc-sm mb-0">End-to-end stores — catalog, checkout, payments, and performance tuning at scale.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">API</div>
+          <h3 class="service-title-sm mb-2">REST API Integration</h3>
+          <p class="service-desc-sm mb-0">Connecting sites and apps to third-party services, internal tools, and headless front ends.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">AI</div>
+          <h3 class="service-title-sm mb-2">AI-Assisted Development</h3>
+          <p class="service-desc-sm mb-0">Using AI tooling responsibly to accelerate delivery while keeping code quality tight.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">SEO</div>
+          <h3 class="service-title-sm mb-2">SEO &amp; Performance</h3>
+          <p class="service-desc-sm mb-0">Technical SEO, Core Web Vitals, and structural fixes that move sites up the results page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects-section mb-5 py-4">
+    <p class="eyebrow-label mb-2">PORTFOLIO</p>
+    <h2 class="about-heading-strong mb-4">Website Projects</h2>
+
+    <div class="filter-bar mb-4" role="group" aria-label="Filter projects by type">
+      <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+      <button type="button" class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button type="button" class="filter-btn" data-filter="cms">CMS</button>
+      <button type="button" class="filter-btn" data-filter="php">PHP</button>
+      <button type="button" class="filter-btn" data-filter="graphics">Graphics</button>
+    </div>
+
+    <div class="row g-4" id="projectsGrid">
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="ecommerce">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/ecommerce-1.jpg" alt="Screenshot of an e-commerce store project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">E-Commerce</span>
+            <h3 class="project-name">Multi-Vendor Fashion Store</h3>
+            <p class="project-desc">WooCommerce with custom checkout flow, vendor dashboards, and payment gateway integration.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="ecommerce">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/ecommerce-2.jpg" alt="Screenshot of a WooCommerce shop project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">E-Commerce</span>
+            <h3 class="project-name">Electronics WooCommerce Shop</h3>
+            <p class="project-desc">High-traffic storefront with product filtering, subscriptions, and performance-tuned checkout.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="cms">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/cms-1.jpg" alt="Screenshot of a WordPress CMS portal project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">CMS</span>
+            <h3 class="project-name">Enterprise News Portal</h3>
+            <p class="project-desc">Custom WordPress CMS with editorial workflows, ACF content blocks, and multi-author roles.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="cms">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/cms-2.jpg" alt="Screenshot of a corporate CMS website project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">CMS</span>
+            <h3 class="project-name">Corporate Website Rebuild</h3>
+            <p class="project-desc">Full Site Editing theme with reusable page blocks, migrated content, and improved load times.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="php">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/php-1.jpg" alt="Screenshot of a custom PHP dashboard project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">PHP</span>
+            <h3 class="project-name">Custom Admin Dashboard</h3>
+            <p class="project-desc">Hand-built PHP dashboard for internal reporting, role-based access, and data exports.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="php">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/php-2.jpg" alt="Screenshot of a Laravel booking application project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">PHP</span>
+            <h3 class="project-name">Laravel Booking Platform</h3>
+            <p class="project-desc">Appointment scheduling system with Laravel, live availability, and automated email confirmations.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="graphics">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/graphics-1.jpg" alt="Screenshot of a brand identity design project">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Graphics</span>
+            <h3 class="project-name">Brand Identity System</h3>
+            <p class="project-desc">Logo suite, color system, and brand guidelines delivered alongside the web.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 project-item" data-category="graphics">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="images/projects/graphics-2.jpg" alt="Screenshot of a UI mockup design set">
+            <div class="project-overlay">
+              <a href="#" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener" aria-label="View case study">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Graphics</span>
+            <h3 class="project-name">Product UI Mockup Set</h3>
+            <p class="project-desc">High-fidelity UI mockups used to pitch and validate a SaaS product before development.</p>
+            <a href="#" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-muted mt-4 mb-0 d-none" id="noProjectsMsg" style="font-size:.9rem;">No projects found in this category yet.</p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="mb-5 py-4">
+    <div class="contact-dark text-center">
+      <div class="stars-layer" id="starField3"></div>
+      <p class="eyebrow-label mb-3">GET IN TOUCH</p>
+      <h2 class="contact-heading mb-3">Let's something worth shipping.</h2>
+      <p class="contact-copy mb-4">
+        Have a WordPress, a custom PHP project, or an AI-assisted product in mind? I'd like to hear about it.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="mailto:hello@shahnawazbagdadi.dev" class="btn-primary-blue">Email Me</a>
+        <a href="#" class="btn-ghost-dark">Download Resume</a>
+      </div>
+      
+                <div class="hire-social-row mt-4">
+            <span class="hire-social-label">Social</span>
+            <a href="#" class="social-square-sm" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.68 0-1.25.44-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.13 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.63.24 2.83.12 3.13.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.66.42.36.78 1.08.78 2.18v3.23c0 .32.2.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Twitter / X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.9L4.8 22H1.6l8.1-9.3L1 2h7l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43C22 8.95 22 9.3 22 12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47C15.05 22 14.7 22 12 22s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.95 0 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Website">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+            </a>
+          </div>
+      
+      
+      
+      
+    </div>
+    
+    
+    
+    
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer py-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start border-top">
+    <span>© 2026 Shahnawaz Bagdadi. All rights reserved.</span>
+    <span>Built with HTML5 · Bootstrap 5 · Tailwind CSS</span>
+  </footer>
+
+</div>
+
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" type="button">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script>
+  function scatterStars(id, count){
+    const field = document.getElementById(id);
+    if(!field) return;
+    for(let i=0;i<count;i++){
+      const s = document.createElement('span');
+      s.className = 'star';
+      const size = Math.random()*2 + 1;
+      s.style.width = size+'px';
+      s.style.height = size+'px';
+      s.style.top = Math.random()*100 + '%';
+      s.style.left = Math.random()*100 + '%';
+      s.style.opacity = (Math.random()*0.7+0.2).toFixed(2);
+      field.appendChild(s);
+    }
+  }
+  scatterStars('starField', 55);
+  scatterStars('starField2', 30);
+  scatterStars('starField3', 30);
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.side-menu .item, .main-navbar .nav-link-item');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if(window.scrollY >= sec.offsetTop - 160) current = sec.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  });
+
+  // Collapse mobile navbar automatically after a link is tapped
+  document.querySelectorAll('.main-navbar .nav-link-item, .nav-cta a').forEach(link => {
+    link.addEventListener('click', () => {
+      const collapseEl = document.getElementById('mainNavCollapse');
+      if(collapseEl && collapseEl.classList.contains('show')){
+        bootstrap.Collapse.getOrCreateInstance(collapseEl).hide();
+      }
+    });
+  });
+
+  // Project filter logic
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-item');
+  const noProjectsMsg = document.getElementById('noProjectsMsg');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      let visibleCount = 0;
+
+      projectItems.forEach(item => {
+        const match = filter === 'all' || item.getAttribute('data-category') === filter;
+        item.hidden = !match;
+        if(match) visibleCount++;
+      });
+
+      noProjectsMsg.classList.toggle('d-none', visibleCount !== 0);
+    });
+  });
+
+  // Scroll-to-top button: fade/slide in after scrolling, animated smooth scroll on click
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('show', window.scrollY > 500);
+  });
+  scrollTopBtn.addEventListener('click', () => {
+    scrollTopBtn.classList.add('pulse');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.setTimeout(() => scrollTopBtn.classList.remove('pulse'), 500);
+  });
+</script>
+</body>
+</html>
