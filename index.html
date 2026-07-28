@@ -599,17 +599,58 @@
     });
   });
 
-  // Updated: Smoothly collapse mobile navbar after link click with a micro-delay
-  document.querySelectorAll('.main-navbar .nav-link-item, .nav-cta a').forEach(link => {
-    link.addEventListener('click', () => {
-      const collapseEl = document.getElementById('mainNavCollapse');
-      if(collapseEl && collapseEl.classList.contains('show')){
-        setTimeout(() => {
-          bootstrap.Collapse.getOrCreateInstance(collapseEl).hide();
-        }, 150);
+  // Close mobile navbar when a nav link is clicked — guarded against double-fire
+  // on touch devices (touchend + synthetic click) and rapid re-toggling.
+  (function(){
+    const collapseEl = document.getElementById('mainNavCollapse');
+    if (!collapseEl) return;
+    let closing = false;
+
+    function closeNav() {
+      if (closing) return;
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+      if (collapseEl.classList.contains('show')) {
+        closing = true;
+        bsCollapse.hide();
+        collapseEl.addEventListener('hidden.bs.collapse', function onHidden() {
+          closing = false;
+          collapseEl.removeEventListener('hidden.bs.collapse', onHidden);
+        });
       }
+    }
+
+    document.querySelectorAll('.main-navbar .nav-link-item, .nav-cta a').forEach(function(link) {
+      // Use touchend for snappy response on mobile; prevent the follow-up click
+      // from firing a second time (which would re-open the menu).
+      link.addEventListener('touchend', function(e) {
+        closeNav();
+        // Do NOT call e.preventDefault() — let the href anchor scroll work.
+      }, { passive: true });
+
+      // Fallback for pointer/mouse devices (where touchend never fires)
+      link.addEventListener('click', function(e) {
+        if (!e._touchHandled) closeNav();
+      });
     });
-  });
+
+    // Prevent the toggler button's synthetic click (fired after touchend) from
+    // toggling the collapse a second time on touch devices.
+    const toggler = document.querySelector('.navbar-toggler');
+    if (toggler) {
+      let togglerTouched = false;
+      toggler.addEventListener('touchstart', function() {
+        togglerTouched = true;
+      }, { passive: true });
+      toggler.addEventListener('click', function(e) {
+        if (togglerTouched) {
+          togglerTouched = false;
+          // The real toggle already happened on touchend (Bootstrap handles it).
+          // Prevent the synthetic click from double-toggling.
+          e.stopImmediatePropagation();
+        }
+      });
+    }
+  })();
 
   // Project filter logic
   const filterButtons = document.querySelectorAll('.filter-btn');
