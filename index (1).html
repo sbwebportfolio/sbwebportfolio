@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahnawaz Bagdadi | Senior WordPress Developer | PHP Developer | Full Stack Web Developer</title>
+  <meta name="description" content="Senior Web Developer with 15+ years of experience in WordPress, PHP, Laravel, WooCommerce, HTML5, Tailwind CSS, JavaScript and SEO. Delivering scalable business websites and enterprise web applications for clients worldwide.">
+
+  <!-- External Stylesheets & Frameworks -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Inline fix helper for dark-theme text visibility */
+    .text-secondary-light {
+      color: #94a3b8 !important; /* High-contrast light slate color for readability on dark backgrounds */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ============ COLLAPSIBLE NAVBAR ============ -->
+  <header class="py-3">
+    <nav class="main-navbar">
+      <a href="#home" class="brand m-0">
+        <span class="brand-mark">S</span> Shahnawaz
+      </a>
+
+      <!-- Collapsible Toggle Button -->
+      <button class="collapsible-btn d-lg-none" type="button" aria-label="Toggle navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Collapsible Content Wrapper -->
+      <div class="collapsible-content">
+        <ul class="nav-list align-items-lg-center">
+          <li><a class="nav-link-item active" href="#home">Home</a></li>
+          <li><a class="nav-link-item" href="#about">About</a></li>
+          <li><a class="nav-link-item" href="#experience">Experience</a></li>
+          <li><a class="nav-link-item" href="#services">Services</a></li>
+          <li><a class="nav-link-item" href="#projects">Projects</a></li>
+          <li><a class="nav-link-item" href="#contact">Contact</a></li>
+          <li class="nav-cta">
+            <a href="#contact" class="btn-primary-blue">Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero-card mb-5">
+    <div class="stars-layer" id="starField"></div>
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-5">
+        <div class="hero-photo-col">
+          <div class="hero-photo-frame">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/profile.png" alt="Portrait of Shahnawaz Bagdadi">
+            <div class="hero-glow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="hero-text-col">
+          <h1 class="hero-name">Shahnawaz Bagdadi</h1>
+          <p class="hero-role">
+            Senior Full Stack Web Developer<br>
+            WordPress Expert | PHP Developer<br>
+            <span class="accent">AI-Powered Web Solutions Architect</span>
+          </p>
+          <p class="hero-desc">
+            Looking for a reliable WordPress & PHP expert? I have 15+ years of international experience delivering custom websites and web applications for businesses worldwide. My expertise includes WordPress,Elementor, WooCommerce, PHP, HTML5, CSS3, JavaScript, API integrations, Technical SEO, website speed optimization, bug fixing, migrations, hosting setup, and maintenance. I focus on delivering secure, scalable, responsive, and business-driven solutions with clear communication, on-time delivery, and long-term support.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contact" class="btn-primary-blue">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+              Hire Me
+            </a>
+            <a href="#projects" class="btn-ghost-dark">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              View Portfolio
+            </a>
+            <a href="#contact" class="btn-ghost-dark">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hire-social-row mt-4 align-items-center">
+            <span class="hire-social-label">Social</span>
+            <a href="#" class="social-square-sm" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.68 0-1.25.44-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.13 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.63.24 2.83.12 3.13.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.66.42.36.78 1.08.78 2.18v3.23c0 .32.2.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Twitter / X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.9L4.8 22H1.6l8.1-9.3L1 2h7l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43C22 8.95 22 9.3 22 12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47C15.05 22 14.7 22 12 22s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.95 0 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34z"/></svg>
+            </a>
+            <a href="#" class="social-square-sm" aria-label="Website">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="mb-5 py-4">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <p class="eyebrow-label mb-2">ABOUT ME</p>
+        <h2 class="about-heading-light mb-1">Welcome, I'm</h2>
+        <h2 class="about-heading-strong mb-4">Shahnawaz Bagdadi</h2>
+        <p class="about-copy mb-4">
+          Senior Full Stack Web Developer with 15+ years of international experience across India, Kuwait and South Africa delivering scalable websites, custom web applications, enterprise CMS solutions, SEO optimization and digital transformation.
+        </p>
+        <div class="row row-cols-2 g-0">
+          <div class="col">
+            <div class="skill-list-item">
+              <span class="skill-icon">WP</span>WordPress &amp; WooCommerce
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+              </span>PHP &amp; Laravel
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>HTML5 &amp; CSS3
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              </span>Bootstrap 5 &amp; Tailwind CSS
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">JS</span>JavaScript &amp; jQuery
+            </div>
+          </div>
+          <div class="col">
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </span>MySQL
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/><path d="M12 6v6l3 3"/></svg>
+              </span>REST APIs
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>SEO &amp; Performance
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>Website Security
+            </div>
+            <div class="skill-list-item">
+              <span class="skill-icon">AI</span>AI-Assisted Development
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-photo-frame">
+          <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/profile.png" alt="Shahnawaz Bagdadi portrait">
+          <div class="about-cta-row">
+            <a href="#contact" class="btn-primary-blue">Hire Me</a>
+            <a href="#" class="btn-ghost-dark">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="mb-5 py-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <nav class="side-menu">
+          <a href="#home" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </span>Home</a>
+          <a href="#about" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          </span>About</a>
+          <a href="#experience" class="item active"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>Experience</a>
+          <a href="#services" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </span>Services</a>
+          <a href="#projects" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </span>Portfolio</a>
+          <a href="#contact" class="item"><span class="ic">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          </span>Contact</a>
+        </nav>
+      </div>
+      <div class="col-lg-9">
+        <div class="exp-card">
+          <div class="stars-layer" id="starField2"></div>
+          <p class="exp-eyebrow mb-2">MY EXPERIENCE</p>
+          <h3 class="exp-title">Senior Full Stack Web Developer</h3>
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>15+ Years Commercial Experience</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              </span>100+ Projects Delivered</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+              </span>International Client Experience</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+              </span>WordPress Expert</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>Full Stack Development</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </span>CMS Architecture</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>Team Leadership</div>
+            </div>
+            <div class="col">
+              <div class="exp-pill"><span class="ic">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>Client Consulting</div>
+            </div>
+          </div>
+
+          <!-- Key Statistics Row -->
+          <div class="row row-cols-2 row-cols-md-4 g-3 mt-4 pt-3 border-top border-secondary">
+            <div class="col text-center">
+              <h4 class="mb-0 fw-bold text-primary">15+</h4>
+              <small class="text-secondary-light">Years Experience</small>
+            </div>
+            <div class="col text-center">
+              <h4 class="mb-0 fw-bold text-primary">300+</h4>
+              <small class="text-secondary-light">Projects Delivered</small>
+            </div>
+            <div class="col text-center">
+              <h4 class="mb-0 fw-bold text-primary">100+</h4>
+              <small class="text-secondary-light">Happy Clients</small>
+            </div>
+            <div class="col text-center">
+              <h4 class="mb-0 fw-bold text-primary">20+</h4>
+              <small class="text-secondary-light">Industries Served</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="mb-5 py-4">
+    <p class="eyebrow-label mb-2">WHAT I DO</p>
+    <h2 class="about-heading-strong mb-4">Services &amp; Expertise</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">WP</div>
+          <h3 class="service-title-sm mb-2">Custom WordPress Development</h3>
+          <p class="service-desc-sm mb-0">High-performance custom themes, plugins, and scalable enterprise WordPress solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">WC</div>
+          <h3 class="service-title-sm mb-2">WooCommerce Stores</h3>
+          <p class="service-desc-sm mb-0">Custom e-commerce platforms with smooth checkouts, payment integrations, and scalability.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">CW</div>
+          <h3 class="service-title-sm mb-2">Corporate &amp; Industrial Websites</h3>
+          <p class="service-desc-sm mb-0">Modern corporate websites, business portals, and robust industrial digital platforms.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">PHP</div>
+          <h3 class="service-title-sm mb-2">Custom PHP Applications</h3>
+          <p class="service-desc-sm mb-0">Bespoke backend web applications and custom logic built using clean PHP and MySQL.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">LV</div>
+          <h3 class="service-title-sm mb-2">Laravel Development</h3>
+          <p class="service-desc-sm mb-0">Robust, full-stack Laravel framework development for web apps and enterprise solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">API</div>
+          <h3 class="service-title-sm mb-2">API Integration</h3>
+          <p class="service-desc-sm mb-0">Seamless REST API connectivity, custom integrations, and third-party web services.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">SEO</div>
+          <h3 class="service-title-sm mb-2">SEO &amp; Speed Optimization</h3>
+          <p class="service-desc-sm mb-0">Technical SEO strategies, Core Web Vitals, performance tuning, and fast load speeds.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">MNT</div>
+          <h3 class="service-title-sm mb-2">Website Maintenance &amp; Security</h3>
+          <p class="service-desc-sm mb-0">Continuous website security enhancements, bug fixes, updates, and ongoing support.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="service-icon-lg">AI</div>
+          <h3 class="service-title-sm mb-2">AI-Powered Web Solutions</h3>
+          <p class="service-desc-sm mb-0">Leveraging cutting-edge AI-assisted development tools to deliver smarter digital products faster.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects-section mb-5 py-4">
+    <p class="eyebrow-label mb-2">PORTFOLIO</p>
+    <h2 class="about-heading-strong mb-4">Website Projects</h2>
+
+    <div class="filter-bar mb-4" role="group" aria-label="Filter projects by type">
+      <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+      <button type="button" class="filter-btn" data-filter="corporate">Corporate</button>
+      <button type="button" class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+      <button type="button" class="filter-btn" data-filter="phpecommerce">PHP E-commerce</button>
+      <button type="button" class="filter-btn" data-filter="realestate">Real Estate</button>
+      <button type="button" class="filter-btn" data-filter="cms">CMS</button>
+      <button type="button" class="filter-btn" data-filter="wordpress">WordPress Website</button>
+      <button type="button" class="filter-btn" data-filter="githubpages">GitHub Pages</button>
+    </div>
+
+    <div class="row g-4" id="projectsGrid">
+
+      <!-- KAICO Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="wordpress">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/kaico.com.kw.png" alt="Screenshot of KAICO Website">
+            <div class="project-overlay">
+              <a href="https://kaico.com.kw" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/kaico.com.kw.png" data-project-title="KAICO Website" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WordPress Website</span>
+            <h3 class="project-name">KAICO</h3>
+            <p class="project-desc">KAICO is the authorized distributor for Mazda, Peugeot, Geely, Michelin, Mobil, and Royal Enfield in Kuwait, providing top-quality automotive solutions.</p>
+            <a href="https://kaico.com.kw" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boushahri Group Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="wordpress">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/boushahrigroup.com.png" alt="Screenshot of Boushahri Group Website">
+            <div class="project-overlay">
+              <a href="https://boushahrigroup.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/boushahrigroup.com.png" data-project-title="Boushahri Group" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WordPress Website</span>
+            <h3 class="project-name">Boushahri Group</h3>
+            <p class="project-desc">Boushahri Group is a diversified corporate entity offering specialized products and services across healthcare, photography, FMCG, and sports.</p>
+            <a href="https://boushahrigroup.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Web Studio Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="wordpress">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/aiwebstudio.wuaze.com.png" alt="Screenshot of AI Web Studio Website">
+            <div class="project-overlay">
+              <a href="https://aiwebstudio.wuaze.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/aiwebstudio.wuaze.com.png" data-project-title="AI Web Studio" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WordPress Website</span>
+            <h3 class="project-name">AI WebStudio</h3>
+            <p class="project-desc">AI WebStudio specializes in artificial intelligence solutions, web development, digital transformation, and smart technology services for modern businesses.</p>
+            <a href="https://aiwebstudio.wuaze.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Creative Blog Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="wordpress">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/aicreativeblog.totalh.net.png" alt="Screenshot of AI Creative Blog Website">
+            <div class="project-overlay">
+              <a href="https://aicreativeblog.totalh.net" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/aicreativeblog.totalh.net.png" data-project-title="AI Creative Blog" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WordPress Website</span>
+            <h3 class="project-name">AI CreativeBlog</h3>
+            <p class="project-desc">AI CreativeBlog delivers content, tutorials, news, and resources exploring artificial intelligence, design trends, and technology innovation.</p>
+            <a href="https://aicreativeblog.totalh.net" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electronics Supermarket Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="wordpress">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/electronics.66ghz.com.png" alt="Screenshot of Electronics Supermarket Website">
+            <div class="project-overlay">
+              <a href="https://electronics.66ghz.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/electronics.66ghz.com.png" data-project-title="Electronics Supermarket" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WordPress Website</span>
+            <h3 class="project-name">Electronics Supermarket</h3>
+            <p class="project-desc">Electronics Supermarket is an online shop offering a wide range of consumer electronics, power tools, audio devices, laptops, and accessories.</p>
+            <a href="https://electronics.66ghz.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shopmart Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="phpecommerce">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/shopmart.wuaze.com.png" alt="Screenshot of Shopmart Website">
+            <div class="project-overlay">
+              <a href="https://shopmart.wuaze.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/shopmart.wuaze.com.png" data-project-title="Shopmart" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">PHP E-commerce</span>
+            <h3 class="project-name">Shopmart</h3>
+            <p class="project-desc">Shopmart is an e-commerce platform offering electronics, apparel, home accessories, and online shopping services.</p>
+            <a href="https://shopmart.wuaze.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- JTCKW Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="wordpress corporate">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/jtckw.com.png" alt="Screenshot of JTCKW WordPress CMS Website">
+            <div class="project-overlay">
+              <a href="https://jtckw.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/jtckw.com.png" data-project-title="JTCKW – Elementor CMS Website" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WordPress Website</span>
+            <h3 class="project-name">JTCKW – Elementor CMS Website</h3>
+            <p class="project-desc">JTC delivers innovative ICT solutions and services that empower businesses and drive digital transformation across Kuwait and beyond.</p>
+            <a href="https://jtckw.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Queenspark Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="ecommerce">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/queenspark.com.png" alt="Screenshot of Queenspark Management System">
+            <div class="project-overlay">
+              <a href="https://queenspark.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/queenspark.com.png" data-project-title="Queenspark Management System" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">E-Commerce</span>
+            <h3 class="project-name">Queenspark Management System</h3>
+            <p class="project-desc">Internal intranet and management system facilitating enterprise-wide retail operations, employee workflows, and centralized business data for Queenspark South Africa.</p>
+            <a href="https://queenspark.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mazaya Holding Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="realestate">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/mazyaholding.com.png" alt="Screenshot of Mazaya Holding Website">
+            <div class="project-overlay">
+              <a href="https://mazayaholding.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/mazyaholding.com.png" data-project-title="Mazaya Holding CMS Portal" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Real Estate</span>
+            <h3 class="project-name">Mazaya Holding CMS Portal</h3>
+            <p class="project-desc">Prominent real estate development company in the Middle East providing comprehensive residential, commercial, and healthcare property solutions.</p>
+            <a href="https://mazayaholding.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mazaya Qatar Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="realestate">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/mazyaqatar.com.png" alt="Screenshot of Mazaya Qatar Website">
+            <div class="project-overlay">
+              <a href="https://mazayaqatar.com" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/mazyaqatar.com.png" data-project-title="Mazaya Qatar Real Estate CMS" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Real Estate</span>
+            <h3 class="project-name">Mazaya Qatar Real Estate CMS</h3>
+            <p class="project-desc">Premier real estate development company in Qatar committed to sustainable community development, investment projects, and high corporate governance standards.</p>
+            <a href="https://mazayaqatar.com" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tamdeen Entertainment Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="cms">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/tamdeenentertainment.png" alt="Screenshot of Tamdeen Entertainment Website">
+            <div class="project-overlay">
+              <a href="https://www.tamdeen.com/" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/tamdeenentertainment.png" data-project-title="Tamdeen Group" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">CMS</span>
+            <h3 class="project-name">Tamdeen Group</h3>
+            <p class="project-desc">A family entertainment portal featuring online ticket purchasing and venue management for Sky Zone, Fun Tiki, Bowl, and Wonder Zone.</p>
+            <a href="https://www.tamdeen.com/" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Pages Project Card -->
+      <div class="col-md-6 col-lg-4 project-item" data-category="githubpages">
+        <div class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/shahnawaz-portfolio.png" alt="Portfolio of Shahnawaz Bagdadi preview thumbnail">
+            <div class="project-overlay">
+              <a href="https://sbwebportfolio.github.io/sbwebportfolio/" target="_blank" rel="noopener" aria-label="View live site">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+              </a>
+              <button type="button" class="btn p-0 border-0 text-white magnifying-trigger" data-bs-toggle="modal" data-bs-target="#projectImageModal" data-preview-img="https://sbwebportfolio.github.io/sbwebportfolio/images/projects/shahnawaz-portfolio.png" data-project-title="Portfolio of Shahnawaz" aria-label="Zoom screenshot">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">GitHub Pages</span>
+            <h3 class="project-name">Portfolio of Shahnawaz</h3>
+            <p class="project-desc">Senior Web Developer with 15+ years of experience in WordPress, PHP, WooCommerce, CodeIgniter, HTML5, CSS3, JavaScript, API integrations, and technical SEO. Delivering scalable enterprise websites and modern web solutions.</p>
+            <a href="https://sbwebportfolio.github.io/sbwebportfolio/" target="_blank" rel="noopener" class="project-link">Visit Live Site
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-muted mt-4 mb-0 d-none" id="noProjectsMsg" style="font-size:.9rem;">No projects found in this category yet.</p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="mb-5 py-4">
+    <div class="contact-dark text-center">
+      <div class="stars-layer" id="starField3"></div>
+      <p class="eyebrow-label mb-3">GET IN TOUCH</p>
+      <h2 class="contact-heading mb-3">Let's build something worth shipping.</h2>
+      <p class="contact-copy mb-4">
+        Have a WordPress, custom PHP, WooCommerce, or enterprise web solution in mind? Let's connect.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="mailto:shahnawazar@gmail.com" class="btn-primary-blue">Hire Me</a>
+        <a href="#" class="btn-ghost-dark">Download Resume</a>
+      </div>
+          
+      <div class="hire-social-row mt-4 justify-content-center">
+        <span class="hire-social-label">Social</span>
+        <a href="#" class="social-square-sm" aria-label="LinkedIn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.66 1.8-2.66 3.65V23h-4V8z"/></svg>
+        </a>
+        <a href="#" class="social-square-sm" aria-label="GitHub">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.95.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.55-3.88-1.55-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.53-2.55-.3-5.24-1.28-5.24-5.68 0-1.25.44-2.28 1.18-3.08-.12-.3-.51-1.5.11-3.13 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.63.24 2.83.12 3.13.74.8 1.18 1.83 1.18 3.08 0 4.41-2.7 5.38-5.26 5.66.42.36.78 1.08.78 2.18v3.23c0 .32.2.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="#" class="social-square-sm" aria-label="Twitter / X">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.9L4.8 22H1.6l8.1-9.3L1 2h7l4.9 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+        </a>
+        <a href="#" class="social-square-sm" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43C22 8.95 22 9.3 22 12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47C15.05 22 14.7 22 12 22s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.95 0 9.3 0 12 0zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.4a1.17 1.17 0 1 0 0-2.34 1.17 1.17 0 0 0 0 2.34z"/></svg>
+        </a>
+        <a href="#" class="social-square-sm" aria-label="Website">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer py-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start border-top border-secondary">
+    <span>© 2026 Shahnawaz Bagdadi. All rights reserved.</span>
+    <span>Built with HTML5 · Bootstrap 5 · Tailwind CSS</span>
+  </footer>
+
+</div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top" type="button">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"></line>
+    <polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
+
+<!-- ============ IMAGE PREVIEW MODAL ============ -->
+<div class="modal fade" id="projectImageModal" tabindex="-1" aria-labelledby="projectImageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light border-secondary">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title fs-6 fw-semibold text-light" id="projectImageModalLabel">Project Preview</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-2 text-center">
+        <img id="modalPreviewImage" src="" alt="Project Screenshot Preview" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Interactive Script -->
+<script>
+  function scatterStars(id, count){
+    const field = document.getElementById(id);
+    if(!field) return;
+    for(let i=0;i<count;i++){
+      const s = document.createElement('span');
+      s.className = 'star';
+      const size = Math.random()*2 + 1;
+      s.style.width = size+'px';
+      s.style.height = size+'px';
+      s.style.top = Math.random()*100 + '%';
+      s.style.left = Math.random()*100 + '%';
+      s.style.opacity = (Math.random()*0.7+0.2).toFixed(2);
+      field.appendChild(s);
+    }
+  }
+  scatterStars('starField', 55);
+  scatterStars('starField2', 30);
+  scatterStars('starField3', 30);
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.side-menu .item, .main-navbar .nav-link-item');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if(window.scrollY >= sec.offsetTop - 160) current = sec.getAttribute('id');
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  });
+
+  // COLLAPSIBLE NAVIGATION LOGIC
+  document.addEventListener('DOMContentLoaded', function() {
+    const collBtn = document.querySelector('.collapsible-btn');
+    const collContent = document.querySelector('.collapsible-content');
+    const navClickables = document.querySelectorAll('.nav-link-item, .nav-cta a');
+
+    if (collBtn && collContent) {
+      collBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        if (collContent.style.maxHeight) {
+          collContent.style.maxHeight = null;
+        } else {
+          collContent.style.maxHeight = collContent.scrollHeight + 'px';
+        }
+      });
+
+      navClickables.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 992) {
+            collBtn.classList.remove('active');
+            collContent.style.maxHeight = null;
+          }
+        });
+      });
+    }
+
+    // Dynamic Modal Preview Handler for Magnifying Icons
+    const imageModal = document.getElementById('projectImageModal');
+    if (imageModal) {
+      imageModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const imgSrc = button.getAttribute('data-preview-img');
+        const projectTitle = button.getAttribute('data-project-title');
+        
+        const modalImg = imageModal.querySelector('#modalPreviewImage');
+        const modalTitle = imageModal.querySelector('#projectImageModalLabel');
+        
+        if (modalImg && imgSrc) {
+          modalImg.src = imgSrc;
+          modalImg.alt = projectTitle || 'Project Preview';
+        }
+        if (modalTitle && projectTitle) {
+          modalTitle.textContent = projectTitle;
+        }
+      });
+    }
+  });
+
+  // Project filter logic
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-item');
+  const noProjectsMsg = document.getElementById('noProjectsMsg');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      let visibleCount = 0;
+
+      projectItems.forEach(item => {
+        const categories = item.getAttribute('data-category').split(' ');
+        const match = filter === 'all' || categories.includes(filter);
+        item.style.display = match ? 'block' : 'none';
+        if(match) visibleCount++;
+      });
+
+      noProjectsMsg.classList.toggle('d-none', visibleCount !== 0);
+    });
+  });
+
+  // Scroll-to-top button
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('show', window.scrollY > 500);
+  });
+  scrollTopBtn.addEventListener('click', () => {
+    scrollTopBtn.classList.add('pulse');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.setTimeout(() => scrollTopBtn.classList.remove('pulse'), 500);
+  });
+</script>
+</body>
+</html>
